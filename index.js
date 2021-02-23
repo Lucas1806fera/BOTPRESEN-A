@@ -441,7 +441,7 @@ const getRegisteredRandomId = () => {
 					client.updatePresence(from, Presence.composing)
 					if (isUser) return reply('você já está registrado')
 					if (isBanned) return reply(mess.only.benned)
-					if (args.length < 1) return reply(`Parametros Incorretos\nComando : ${prefix}daftar nama/umur\nExemplo : ${prefix}daftar Ana/17/São Paulo`)
+					if (args.length < 1) return reply(`Parametros Incorretos\nComando : ${prefix}daftar nama/umur\nExemplo : ${prefix}daftar Rii/17/São Paulo`)
 					reg = `${body.slice(8)}`
 					jeneng = reg.split("/")[0];
 					umure = reg.split("/")[1];
@@ -488,7 +488,7 @@ const getRegisteredRandomId = () => {
 					me = client.user
 					user.push(sender)
 					uptime = process.uptime()
-					teks = `⟩➢ *Ana* : ${me.name}\n⟩➢ *11954580970* : @${me.jid.split('@')[0]}\n⟩➢ *prefix* : | ${prefix} |\n⟩➢ *Total Block* : ${blocked.length}\n⟩➢ *Ana* : ${kyun(uptime)}\n\n⟩➢ Total Do Utilizador: *${user.length}* Usuario\n⟩➢ *Instagram* : Lucasmolino18/\n⟩➢ *Special Agradecimentos * :\n⟩➢ Deus \n⟩➢ Jesus`
+					teks = `⟩➢ *Rii* : ${me.name}\n⟩➢ *11954580970* : @${me.jid.split('@')[0]}\n⟩➢ *prefix* : | ${prefix} |\n⟩➢ *Total Block* : ${blocked.length}\n⟩➢ *Rii* : ${kyun(uptime)}\n\n⟩➢ Total Do Utilizador: *${user.length}* Usuario\n⟩➢ *Instagram* : Lucasmolino18/\n⟩➢ *Special Agradecimentos * :\n⟩➢ Deus \n⟩➢ Jesus`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -509,7 +509,7 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, ben.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": ban}})
 					break 
 				case 'premiumlist':
-				prem = '```Lista Users Premium  ANA B O T``` :\n'
+				prem = '```Lista Users Premium  RII B O T``` :\n'
 					for (let userprem of userpremium) {
 						prem += `~> @${userprem.split('@')[0]}\n`
 					}
@@ -1180,7 +1180,7 @@ const getRegisteredRandomId = () => {
                          text: ress,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    client.sendMessage('55115480970@s.whatsapp.net', options, text, {quoted: mek})
+                    client.sendMessage('6285349607186@s.whatsapp.net', options, text, {quoted: mek})
                     reply('SUA SOLICITAÇÃO chegou ao proprietário BOT, Requests palsu/main2 tidak akan ditanggapi.')
                     break
 				case 'meme':
